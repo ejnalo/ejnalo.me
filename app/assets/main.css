@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Fredoka:wght@300..700&family=Sofadi+One&display=swap');
+@import "tailwindcss";
+
+@theme {
+	--breakpoint-xs: 360px;
+	--breakpoint-sm: 560px;
+	--breakpoint-md: 640px;
+	--breakpoint-lg: 960px;
+	--breakpoint-xl: 1280px;
+	--breakpoint-2xl: 1440px;
+
+	--color-primary: #1d52a4;
+
+	--color-background: #cadbf6;
+	--color-surface: #dbe7f9;
+	--color-surface-b: #bad0f3;
+	--color-navbar: var(--color-surface);
+	--color-text: #174183;
+
+	--font-sans: 'Fredoka', sans-serif;
+	--font-display: 'Caprasimo', sans-serif;
+	--font-title: 'Sofadi One', sans-serif;
+}
+
+@theme {
+	@keyframes debounce {
+		0% {
+			transform: scale(1.025);
+		}
+
+		50% {
+			transform: scale(0.95);
+		}
+
+		100% {
+			transform: scale(1);
+		}
+	}
+
+	--animate-debounce: debounce 300ms ease-out;
+}
+
+body {
+	background-color: var(--color-background);
+	color: var(--color-text);
+}
